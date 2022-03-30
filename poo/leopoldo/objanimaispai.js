@@ -1,6 +1,7 @@
 class animais {
 
-    constructor(filo, classe, ordem, familia, habitat, aceleracao){
+    constructor(nome, filo, classe, ordem, familia, habitat, aceleracao){
+        this.nome = nome,
         this.filo = filo,
         this.classe = classe,
         this.ordem = ordem,
@@ -16,7 +17,7 @@ class animais {
     }
 
     descrever() {
-        console.log(JSON.stringify(this)); 
+        console.log(JSON.stringify(this.nome));
     }
     
     inicio(posinit) {
@@ -29,18 +30,18 @@ class animais {
 
     sentirSede() {
         this.sede = true;
-        console.log("Então a ")
+        console.log("Então a ");
         this.descrever();
         console.log(" sentiu muita sede.");
-        console.log("(Sede: " + this.sede + ")")
+        console.log("(Sede: " + this.sede + ")");
     }
 
     sentirFome() {
         this.fome = true;
-        console.log("Então a ")
+        console.log("Então a ");
         this.descrever();
         console.log(" sentiu muita fome.");
-        console.log("(Fome: " + this.fome + ")")
+        console.log("(Fome: " + this.fome + ")");
     }
 
     beberAgua() {

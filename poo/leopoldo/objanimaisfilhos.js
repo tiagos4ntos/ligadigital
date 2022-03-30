@@ -1,8 +1,8 @@
 const animais = require('./objanimaispai')
 
 
-let onca = new animais("Chordata", "Mammalia", "Carnívoro", "Felídeos", "Américas", 60);
-let capivara = new animais("Chordata", "Mammalia", "Rodentia", "Hydrochoeridae", "Américas", 30);
+let onca = new animais("Onça Pintada", "Chordata", "Mammalia", "Carnívoro", "Felídeos", "Américas", 60);
+let capivara = new animais("Capivara", "Chordata", "Mammalia", "Rodentia", "Hydrochoeridae", "Américas", 30);
 
 
 capivara.inicio(60);
